@@ -4,24 +4,23 @@ import java.util.List;
 public class Subsequences {
     public static void main(String[] args) {
         int[] nums = {1,2,3};
-        subseq(nums);
+        subsets(nums);
     }
 
-    public static List<List<Integer>> subseq(int[] nums) {
-        List<Integer> ll = new ArrayList<>();
-        List<List<Integer>> list = new ArrayList<>();
-        subsequence(nums, 0, list, ll);
-        return list;
+    public static  void subsets(int[] nums) {
+        String s = "";
+        subsequence(nums, 0, s);
+        return ;
     }
 
-    public static void subsequence(int[] nums, int idx, List<List<Integer>> list, List<Integer> ll){
+    public static void subsequence(int[] nums, int idx, String s){
         if(idx>=nums.length){
-            list.add(new ArrayList<>(ll));
+            System.out.print(s+ ",");
             return;
         }
-        ll.add(nums[idx]);
-        subsequence(nums, idx+1, list, ll);
-        ll.remove(ll.size()-1);
-        subsequence(nums, idx+1, list,ll);
+        s = s + nums[idx];
+        subsequence(nums, idx+1, s);
+        s = s.substring(0, s.length()-1);
+        subsequence(nums, idx+1, s);
     }
 }
