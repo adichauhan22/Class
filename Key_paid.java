@@ -1,5 +1,3 @@
-package Recursion;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +20,7 @@ public class Key_paid {
         char ch = ques.charAt(0);
         String press = key[ch-'0'];
         for(int i=0; i<press.length(); i++){
-            Print(ll,ques.substring(1), ans+press.charAt(i));
+            Print(ll, ques.substring(1), ans+press.charAt(i));
         }
     }
 }
