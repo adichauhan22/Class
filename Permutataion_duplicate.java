@@ -1,5 +1,3 @@
-package Recursion;
-
 public class Permutataion_duplicate {
     public static void main(String[] args) {
         String ques = "abcb";

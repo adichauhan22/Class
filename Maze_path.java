@@ -1,5 +1,3 @@
-package Recursion;
-
 public class Maze_path {
     public static void main(String[] args) {
         int m = 3;

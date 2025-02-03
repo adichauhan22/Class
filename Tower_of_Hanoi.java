@@ -1,5 +1,3 @@
-package Recursion;
-
 public class Tower_of_Hanoi {
     public static void main(String[] args) {
         String src = "A";

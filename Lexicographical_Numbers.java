@@ -1,5 +1,3 @@
-package Recursion;
-
 public class Lexicographical_Numbers {
     public static void main(String[] args) {
         int n = 13;

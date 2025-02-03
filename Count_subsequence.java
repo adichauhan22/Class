@@ -1,5 +1,3 @@
-package Recursion;
-
 public class Count_subsequence {
     public static void main(String[] args) {
         String str = "abc";
